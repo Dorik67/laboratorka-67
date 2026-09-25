@@ -1,0 +1,17 @@
+#!/usr/bin/python3:
+i = 0
+'''while (i < 10):
+	print (i, end = ' ')
+	i +=1
+print()
+
+for i in range(10):
+	if i %2 != 0:
+		continue
+	if i == 8:
+		break '''
+
+def f(a,b,c):
+	return b**2 - 4*a*c
+a, b, c = map(int, input().split())
+d = f(a,b,c)

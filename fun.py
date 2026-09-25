@@ -1,0 +1,25 @@
+#!/usr/bin/python3
+import turtle
+def circle(direction='left'):
+    N = 200 
+    for i in range(200):
+        turtle.forward(1)
+        if direction == "left":
+            turtle.left(360 / N)
+        elif direction == "right":
+            turtle.right(360 / N)
+        else:
+            print("ERROR")
+            return
+def eight():
+    circle('left')
+    circle('right')
+
+turtle.tracer(False)
+turtle.shape('turtle')
+
+N = 5 
+for i in range(N):
+    eight()
+    turtle.left(180 / N)
+turtle.mainloop()
